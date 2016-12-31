@@ -1,0 +1,95 @@
+body {
+	box-sizing: border-box;
+	font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+	
+}
+
+.nav {
+	color: rgb(123, 123, 123);
+	list-style: none;
+	text-align: center;
+	font-size: 19px;
+	padding-top: 60px;
+	padding-left: 120px;
+}
+
+.nav > li {
+	display: inline-block;
+	padding-right: 100px;
+}
+
+.nav > li > a {
+	text-decoration:none;
+	color: rgb(123, 123, 123);
+} 
+
+h1 {
+	color: rgb(123, 123, 123);
+	text-align: center;
+	font-size: 34px;
+	padding-top: 40px;
+	padding-bottom: 50px;
+}
+
+p {
+	color: rgb(123, 123, 123);
+	text-align: center;
+	font-size: 18px;
+	padding-top: 90px;
+	padding-bottom: 10px;
+	/*padding-right: 20%;
+	padding-left: 20%;*/
+}
+
+@keyframes firstPhase {
+	0% {opacity: 1.0;}
+	25% {opacity: 1.0;}
+	50% {opacity: 0.0;}
+	75% {opacity: 0.0;}
+	100% {opacity: 1.0;}
+}
+
+#firstImg {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	max-width: 500px;
+	animation: 15s firstPhase infinite;
+}
+
+@keyframes secondPhase {
+	0% {opacity: 0.0;}
+	25% {opacity: 0.0;}
+	50% {opacity: 1.0;}
+	75% {opacity: 1.0;}
+	100% {opacity: 0.0;}
+}
+
+
+
+#secondImg {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -375px;
+	width: 80%;
+	max-width: 500px;
+	animation: 15s secondPhase infinite;
+}
+
+@media screen and (max-width: 720px){
+
+#secondImg {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -60%;
+	width: 80%;
+	max-width: 500px;
+	animation: 15s secondPhase infinite;
+}
+}
+
+	/*		<img id="firstImg" src="http://i64.tinypic.com/wwf887.jpg" align="middle";>
+			<img id="secondImg" src="http://i66.tinypic.com/igeo3k.jpg" align="middle";>
